@@ -1,13 +1,8 @@
-const pool = new Pool({
-  host: process.env.PGHOST,
-  user: process.env.PGUSER,
-  password: process.env.PGPASSWORD,
-  database: process.env.PGDATABASE,
-  port: process.env.PGPORT,
-  ssl: {
-    rejectUnauthorized: false
-  }
-});
+const express = require('express');
+const { Pool } = require('pg');
+const bodyParser = require('body-parser');
+const app = express();
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
