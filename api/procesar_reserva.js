@@ -35,7 +35,7 @@ app.post('/api/procesar_reserva', (req, res) => {
          if (error) {
       return res.status(500).json({ error: error.message });
     }
-    res.redirect('/ResgistradoCorrectamente.html');
+    res.redirect('/RegistradoCorrectamente.html');
   });
 });;
 
