@@ -33,9 +33,9 @@ app.post('/api/procesar_reserva', (req, res) => {
   const query = `INSERT INTO reservas (nombre, curso, email, horario) VALUES ($1, $2, $3, $4)`;
   pool.query(query, [nombre, curso, email, horario], (error) => {
     if (error) {
-      return res.status(500).json({ error: error.message });
+      res.redirect('/ResgistradoCorrectamente.html'); });
     }
-    res.status(200).json({ url: registradocorrectamente.html });
+    res.status(200).json({  });
   });
 });
 
