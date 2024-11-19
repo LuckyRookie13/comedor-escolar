@@ -1,0 +1,13 @@
+*{
+    background-color:gray; 
+}
+
+body{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    font-size: xx-large;
+    font-family: sans-serif;
+}
